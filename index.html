@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <title>Passwords Generator</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="firsth1">Generate a</h1>
+            <h1 id="secondh1">random password</h1>
+            <h2 id="subtext">Never use an insecure password again.</h2>
+            <button id="generate" onclick="clickPasswords()">Generate passwords</button>
+            <hr>
+            <div id="passworddiv">
+                <div class="password" id="password1"></div>
+                <div class="password" id="password2"></div>
+            </div>
+            <!-- Password Strength Indicator -->
+            <div id="password-strength"></div>
+            
+            <!-- Copy to Clipboard Button -->
+            <button id="copy-password" onclick="copyToClipboard()">Copy to Clipboard</button>
+            
+            <!-- Character Set Selection -->
+            <div id="character-set">
+                <label for="char-lowercase"><input type="checkbox" id="char-lowercase" checked> Lowercase</label>
+                <label for="char-uppercase"><input type="checkbox" id="char-uppercase" checked> Uppercase</label>
+                <label for="char-numbers"><input type="checkbox" id="char-numbers" checked> Numbers</label>
+                <label for="char-symbols"><input type="checkbox" id="char-symbols" checked> Symbols</label>
+            </div>
+            
+            <!-- Password Length Slider -->
+            <label for="password-length" style="color: #fff;">Password Length: <span id="length-value">12</span></label>
+            <input type="range" id="password-length" min="8" max="24" step="1" value="12">
+            <!-- ------btn------ -->
+            <a id="btn" href="suggetion.html">Suggetion for Password and security</a>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
